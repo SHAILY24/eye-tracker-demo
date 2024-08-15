@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eye Tracker Demo - Interactive Gaze Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Eye Tracker Demo</h1>
+        <div id="author">By Shaily</div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('documentation') }}">Documentation</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="status">Initializing eye tracking...</div>
+        <button id="startButton">Start Calibration</button>
+
+        <div id="calibrationArea">
+            <div id="calibrationBox">
+                <div id="calibrationPoint"></div>
+            </div>
+            <div id="calibrationInstructions">
+                <p>Follow these steps:</p>
+                <ol>
+                    <li>Ensure your face is well-lit and centered in the box</li>
+                    <li>Focus on each red dot</li>
+                    <li>Press SPACE while focusing on each point</li>
+                    <li>Try to keep your head still during calibration</li>
+                </ol>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="gameArea">
+            <div id="target"></div>
+            <div id="instructions">Find the target using your eyes!</div>
+        </div>
+
+        <div id="gazePointer"></div>
+        <div id="debugInfo"></div>
+    </main>
+
+    <footer>
+        <p>© 2025 Eye Tracker Demo by Shaily Sharma | <a href="https://github.com/SHAILY24">GitHub</a> | <a href="mailto:shailysharma873@gmail.com">Contact</a></p>
+    </footer>
+
+    <!-- Include math.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.2/math.min.js"></script>
+    <!-- Include WebGazer.js -->
+    <script src="https://webgazer.cs.brown.edu/webgazer.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
