@@ -1,0 +1,15 @@
+[Unit]
+Description=Eye Tracker Demo Flask Application
+After=network.target
+
+[Service]
+User=shaily
+Group=shaily
+WorkingDirectory=/home/shaily/code/personal/company_portfolio/fairway_vision/eye_tracking_demo
+Environment="PATH=/home/shaily/code/personal/company_portfolio/fairway_vision/eye_tracking_demo/.venv/bin"
+ExecStart=/home/shaily/code/personal/company_portfolio/fairway_vision/eye_tracking_demo/.venv/bin/python /home/shaily/code/personal/company_portfolio/fairway_vision/eye_tracking_demo/app.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
