@@ -189,7 +189,7 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 **Shaily Sharma**
 - GitHub: [@SHAILY24](https://github.com/SHAILY24)
 - Email: [shailysharma873@gmail.com](mailto:shailysharma873@gmail.com)
-- LinkedIn: [Connect with me](https://linkedin.com/in/shaily-sharma)
+- LinkedIn: [Connect with me](https://www.linkedin.com/in/shailysharma873/)
 
 ## Acknowledgments
 
