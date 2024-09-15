@@ -1,0 +1,36 @@
+title = "Eye Tracker Demo Gitleaks Configuration"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "flask-secret-key"
+description = "Flask Secret Key"
+regex = '''(?i)(secret_key|SECRET_KEY)\s*=\s*["'][^"']+["']'''
+tags = ["flask", "secret", "security"]
+
+[[rules]]
+id = "generic-api-key"
+description = "Generic API Key"
+regex = '''(?i)(api[_\-\s]?key|apikey)\s*[:=]\s*["'][a-zA-Z0-9\-_]{20,}["']'''
+tags = ["api", "key", "security"]
+
+[[rules]]
+id = "private-email"
+description = "Private Email Addresses"
+regex = '''[a-zA-Z0-9._%+-]+@(njit\.edu|gmail\.com|outlook\.com|yahoo\.com)'''
+tags = ["email", "pii"]
+
+[allowlist]
+paths = [
+    '''.env.example''',
+    '''requirements.txt''',
+    '''.venv/''',
+    '''venv/''',
+    '''env/''',
+    '''node_modules/''',
+    '''.git/'''
+]
+
+commits = []
+repos = []

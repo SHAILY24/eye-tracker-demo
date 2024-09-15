@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Documentation - Eye Tracker Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added for mobile responsiveness -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Documentation</h1>
+        <div id="author">By Shaily</div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('documentation') }}">Documentation</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>About the Project</h2>
+        <p>The Eye Tracker Demo is an interactive web application that utilizes WebGazer.js to track user gaze in real-time, enabling hands-free interaction with on-screen elements through eye movements alone.</p>
+
+        <h2>Inspiration</h2>
+        <p>This project explores the potential of eye-tracking technology for creating more accessible and intuitive human-computer interfaces, demonstrating how gaze-based interaction can enhance user experiences and provide alternative input methods for users with mobility challenges.</p>
+
+        <h2>How to Use</h2>
+        <ol>
+            <li>Ensure your webcam is enabled and accessible by your browser.</li>
+            <li>Click on "Start Game" on the home page.</li>
+            <li>Allow the application to calibrate your eye movements (this may take a few moments).</li>
+            <li>Once calibration is complete, use your gaze to find and focus on the target to interact with it.</li>
+            <li>If you're on a mobile device, please ensure your device supports webcam access and rotate it to landscape mode for the best experience.</li>
+        </ol>
+
+        <h2>Troubleshooting</h2>
+        <p>If the eye-tracking does not seem accurate, try the following:</p>
+        <ul>
+            <li>Make sure your face is well-lit and clearly visible to the webcam.</li>
+            <li>Avoid background distractions and strong light sources behind you.</li>
+            <li>Try recalibrating by refreshing the page and starting the game again.</li>
+            <li>Ensure you're using a compatible browser (latest versions of Chrome or Firefox recommended).</li>
+        </ul>
+
+        <h2>Contact</h2>
+        <p>If you have any questions or feedback, please reach out via <a href="https://github.com/SHAILY24">GitHub</a> or email at <a href="mailto:shailysharma873@gmail.com">shailysharma873@gmail.com</a>.</p>
+    </main>
+
+    <footer>
+        <p>© 2025 Eye Tracker Demo by Shaily Sharma | <a href="https://github.com/SHAILY24">GitHub</a> | <a href="mailto:shailysharma873@gmail.com">Contact</a></p>
+    </footer>
+</body>
+</html>
