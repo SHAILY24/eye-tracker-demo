@@ -1,12 +1,10 @@
 # Eye Tracker Demo
 
-An interactive web application demonstrating real-time eye-tracking capabilities using WebGazer.js, enabling hands-free computer interaction through gaze detection.
+A web app that tracks where you are looking with WebGazer.js and lets you hit on-screen targets with your gaze instead of a mouse.
 
 **Built by Shaily Sharma | [GitHub](https://github.com/SHAILY24) | [Live Demo](https://eyetracker.shaily.dev)**
 
-## Why I Built This
-
-As a computer science enthusiast passionate about human-computer interaction, I developed this project to explore the potential of eye-tracking technology in creating more accessible and intuitive user interfaces. This demonstration showcases how gaze-based interaction can revolutionize the way we interact with digital systems, particularly benefiting users with mobility challenges or those seeking hands-free computing solutions.
+I wanted to see how far browser-based gaze tracking could go without any special hardware, so I built a small calibration-and-targeting demo around WebGazer.
 
 ## Tech Stack
 
@@ -21,23 +19,23 @@ As a computer science enthusiast passionate about human-computer interaction, I 
 
 ## Live Demo
 
-🌐 **Access the live demo at: [https://eyetracker.shaily.dev](https://eyetracker.shaily.dev)**
+Live at [https://eyetracker.shaily.dev](https://eyetracker.shaily.dev).
 
 ### Test Instructions
 1. Allow camera permissions when prompted
-2. Ensure your face is well-lit and centered
-3. Follow the calibration process
-4. Use your eyes to interact with on-screen targets
+2. Sit in good light with your face centered
+3. Run the calibration
+4. Move your eyes to hit the on-screen targets
 
 ## Features
 
-- **Real-time Eye Tracking**: Utilizes WebGazer.js for accurate gaze detection
-- **Interactive Calibration**: 9-point calibration system for personalized accuracy
-- **Visual Feedback**: Real-time gaze pointer visualization
-- **Target Interaction**: Interactive targets that respond to gaze focus
-- **Responsive Design**: Works on desktop browsers with webcam support
-- **Privacy-First**: All processing happens client-side, no data is transmitted
-- **Regression Analysis**: Advanced mathematical models for gaze prediction
+- Gaze tracking through WebGazer.js
+- A 9-point calibration step to tune accuracy for your setup
+- A live pointer that follows where you look
+- Targets that react when your gaze lands on them
+- Works on desktop browsers that have a webcam
+- Everything runs client-side. Nothing leaves the browser.
+- Regression on the calibration points to predict gaze position
 
 ## Project Structure
 
@@ -162,11 +160,7 @@ This application implements several security measures:
 
 ## Performance Metrics
 
-- **Calibration Time**: ~30 seconds
-- **Tracking Accuracy**: 100-150px precision after calibration
-- **Response Time**: <50ms gaze detection latency
-- **Browser Support**: 95%+ modern browsers
-- **Resource Usage**: Moderate CPU usage during tracking
+Calibration takes about 30 seconds. After that, accuracy is roughly 100 to 150px, and gaze detection latency stays under 50ms. It runs on 95%+ of modern browsers. CPU use is moderate while tracking is active.
 
 ## Future Roadmap
 
@@ -193,6 +187,4 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 ## Acknowledgments
 
-- WebGazer.js team for the excellent eye-tracking library
-- Flask community for the robust web framework
-- Open source contributors who make projects like this possible
+Thanks to the WebGazer.js team for the tracking library and to the Flask project, which this is built on.
